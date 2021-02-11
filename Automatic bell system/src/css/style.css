@@ -1,0 +1,89 @@
+#lblTitle{
+    -fx-text-fill: aliceblue;
+}
+
+#lblMainPanelBackground{
+    -fx-text-fill: aliceblue;
+    -fx-background-color: #007f5f;
+}
+
+#lblCurrentTime{
+    -fx-font-weight: bold;
+}
+
+#bellTable :odd{
+    -fx-cell-size: 50;
+    -fx-background-color: #70e000;
+    -fx-alignment: center;
+    -fx-text-alignment: center;
+    -fx-font-size: 20;
+    -fx-font-weight: bold;
+
+}
+
+#bellTable :even{
+    -fx-cell-size: 50;
+    -fx-background-color: #38b000;
+    -fx-alignment: center;
+    -fx-text-alignment: center;
+    -fx-font-size: 20;
+    -fx-font-weight: bold;
+}
+
+#bellTable .column-header, #bellTable .filler {
+
+    -fx-text-fill: white;
+    -fx-border-width: 0px;
+    -fx-background-color: #006400;
+    -fx-pref-height:60;
+}
+
+#bellTable .column-header .label {
+    -fx-text-fill: aliceblue;
+    -fx-font-size: 20;
+    -fx-alignment: center;
+
+    -fx-opacity: 1;
+}
+
+#bellTable .tree-table-row-cell:selected{
+    -fx-background-color: #007200;
+}
+
+#bellTable .scroll-bar:vertical,
+#bellTable .scroll-bar:horizontal{
+   -fx-background-color: #007200;
+    -fx-background-radius: 0em;
+}
+
+#bellTable .scroll-bar:vertical .thumb,
+#bellTable .scroll-bar:horizontal .thumb{
+    -fx-background-color: #38b000;
+    -fx-background-radius: 5em;
+}
+
+#bellTable .tree-table-row-cell:selected > .tree-table-cell{
+    -fx-background-color: #007200;
+    -fx-text-fill: aliceblue;
+}
+
+#bellTable .scroll-bar:vertical .increment-button,
+#bellTable .scroll-bar:vertical .decrement-button,
+#bellTable .scroll-bar:horizontal .increment-button,
+#bellTable .scroll-bar:horizontal .decrement-button{
+    visibility: hidden;
+}
+
+.button{
+    -fx-background-color: #006400;
+    -fx-text-fill: aliceblue;
+}
+
+#imgBackground{
+    -fx-opacity: 0.5;
+}
+
+#txtTime{
+    -fx-font-weight: bold;
+    -fx-font-size: 18;
+}

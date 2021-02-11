@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import com.jfoenix.controls.JFXTimePicker?>
+<?import com.jfoenix.controls.JFXTreeTableView?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="793.0" prefWidth="1259.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="BellSystem.AppController">
+   <children>
+      <ImageView fx:id="imgBackground" fitHeight="792.0" fitWidth="1265.0" layoutX="-2.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@images/background.jpg" />
+         </image>
+      </ImageView>
+      <JFXButton fx:id="btnAd" layoutX="460.0" layoutY="651.0" onAction="#onAdd" prefHeight="86.0" prefWidth="80.0" text="+" textAlignment="CENTER">
+         <font>
+            <Font name="System Bold" size="40.0" />
+         </font></JFXButton>
+      <JFXTreeTableView fx:id="bellTable" layoutX="27.0" layoutY="119.0" prefHeight="430.0" prefWidth="526.0" />
+      <Label fx:id="lblMainPanelBackground" prefHeight="86.0" prefWidth="1259.0" />
+      <Label fx:id="lblTitle" layoutX="27.0" prefHeight="86.0" prefWidth="444.0" text="School Bell System">
+         <font>
+            <Font name="System Bold Italic" size="48.0" />
+         </font>
+      </Label>
+      <Label fx:id="lblCurrentTime" layoutX="682.0" layoutY="131.0" prefHeight="77.0" prefWidth="311.0">
+         <font>
+            <Font size="50.0" />
+         </font>
+      </Label>
+      <Label layoutX="31.0" layoutY="652.0" prefHeight="27.0" prefWidth="98.0" text="Enter Index">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="31.0" layoutY="692.0" text="Enter Bell Name">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="31.0" layoutY="728.0" text="Enter Bell Time">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Label>
+      <JFXTimePicker fx:id="txtTime" layoutX="188.0" layoutY="716.0" />
+      <JFXTextField fx:id="txtName" layoutX="188.0" layoutY="674.0">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font></JFXTextField>
+      <JFXTextField fx:id="txtIndex" layoutX="188.0" layoutY="640.0">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font></JFXTextField>
+      <JFXButton fx:id="btnDelete" layoutX="227.0" layoutY="565.0" onAction="#onDelete" prefHeight="60.0" prefWidth="128.0" text="   ">
+         <graphic>
+            <ImageView fx:id="imgDelete" fitHeight="40.0" fitWidth="34.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@images/img-delete.png" />
+               </image>
+            </ImageView>
+         </graphic></JFXButton>
+      <Label fx:id="lblErrorMsg" layoutX="589.0" layoutY="665.0" prefHeight="53.0" prefWidth="392.0">
+         <font>
+            <Font name="System Bold" size="25.0" />
+         </font>
+      </Label>
+      <Label fx:id="lblRemainingTime" layoutX="682.0" layoutY="318.0" prefHeight="104.0" prefWidth="339.0" text="Remaining Time " textAlignment="CENTER">
+         <font>
+            <Font name="System Bold" size="36.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>
