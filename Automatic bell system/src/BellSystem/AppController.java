@@ -112,6 +112,7 @@ public class AppController implements Initializable {
 
     }
 
+    // Adding records for a period
     @FXML
     void onAdd(ActionEvent event) throws UnsupportedAudioFileException, IOException, LineUnavailableException {
 
