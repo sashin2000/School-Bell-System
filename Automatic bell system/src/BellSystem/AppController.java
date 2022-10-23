@@ -165,9 +165,6 @@ public class AppController implements Initializable {
             //System.out.println(Integer.parseInt(records.get(0).getIndex()) + Integer.parseInt(records.get(1).getIndex()));
             Collections.sort(records);
 
-            //System.out.println(records.get(0).getBellTime());
-            //System.out.println(records.size());
-            //System.out.println(dateFormat.format(date));
 
             try {
                 String time1 = dateFormat.format(date);
